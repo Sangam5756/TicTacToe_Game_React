@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Square from "./Square";
+import RefreshButton from "./RefreshButton";
 
 
 
@@ -36,7 +37,8 @@ export default function Board() {
 
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">
+      <h1>{status}</h1></div>
       <div className="board-row">
         <Square value ={squares[0]}  onSquareClicked={() => handleClick(0)} />
         <Square value ={squares[1]}  onSquareClicked={() => handleClick(1)} />
@@ -52,6 +54,8 @@ export default function Board() {
         <Square value ={squares[7]}  onSquareClicked={() => handleClick(7)} />
         <Square value ={squares[8]}  onSquareClicked={() => handleClick(8)} />
       </div>
+      <br />
+      <RefreshButton/>
     </>
   );
 }
