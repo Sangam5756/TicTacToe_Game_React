@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import './App.css'
-import Button from './Button'
-import Profile from './Profile'
 import Board from './Board';
 
 
@@ -17,10 +15,7 @@ function App() {
 
   return (
     <>
-      {/* <Profile/>      */}
-      {/* <Counter/> */}
-      {/* <Button count ={count} action={Increment}/> */}
-      {/* <Button count ={count} action={Increment}/> */}
+     
 
       <Board/>
 
